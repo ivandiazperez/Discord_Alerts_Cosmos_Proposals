@@ -1,0 +1,10 @@
+[Unit]
+Description=Start the Discord alerts service for Terra proposals.
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /PATH/TO/standalone_governance_alerts.py
+
+[Install]
+WantedBy=multi-user.target
