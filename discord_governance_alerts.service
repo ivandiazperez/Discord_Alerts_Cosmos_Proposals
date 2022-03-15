@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /PATH/TO/standalone_governance_alerts.py
+ExecStart=/usr/bin/python3 /PATH/TO/standalone_governance_alerts.py VALIDATOR1 VALIDATOR2 VALIDATOR3 etc.
 
 [Install]
 WantedBy=multi-user.target
